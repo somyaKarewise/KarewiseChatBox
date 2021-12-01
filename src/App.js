@@ -5,8 +5,8 @@ import "./App.css";
 import Register from "./Register";
 import Login from "./Login";
  import { CometChat } from "@cometchat-pro/chat";
-import { CometChatUserList } from "./cometchat-pro-react-ui-kit/CometChatWorkspace/src/components/Users/CometChatUserList";
-import { CometChatUI } from "./cometchat-pro-react-ui-kit/CometChatWorkspace/src/components/CometChatUI";
+import { CometChatUserList } from "./cometchat-pro-react-ui-kit/CometChatWorkspace/src";
+import { CometChatUI } from "./cometchat-pro-react-ui-kit/CometChatWorkspace/src";
 function App() {
   const [user, setUser] = useState(null);
   const [phone, setPhone] = useState("");
