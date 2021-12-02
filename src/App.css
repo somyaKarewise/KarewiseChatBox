@@ -34,3 +34,12 @@ button{
   flex-direction: column;
   align-items: center;
 }
+.buttons{
+  
+    border-radius: .3rem!important;
+    background-color: #f7971d!important;
+    color: #fff!important;
+    font-size: 1.2rem!important;
+    border: #f7971d;
+
+}

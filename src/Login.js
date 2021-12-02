@@ -12,7 +12,8 @@ export default function Register(props) {
 
     CometChat.login(UID, authKey).then(
       (User) => {
-        console.log("Login Successfulkokok:", { User });
+        console.log("Login Successful:", { User });
+        alert("Login Successful");
         // User loged in successfully.
         console.log(User.uid);
         setUser(User);
@@ -38,7 +39,7 @@ export default function Register(props) {
           onChange={(e) => setPhone(e.target.value)}
         />{" "}
         <br />
-        <button>Login</button>
+        <button className="buttons">Login</button>
       </form>
     </div>
   );

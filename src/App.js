@@ -56,7 +56,7 @@ function App() {
       {user ? (
         <section id="chat_body">
           {/* logout button */}
-          <button onClick={() => logout()}>Logout</button>
+          <button onClick={() => logout()} className="buttons">Logout</button>
 
           {/* add friend form */}
           <div>
@@ -67,14 +67,14 @@ function App() {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />{" "}
-            <button onClick={(e) => addFriend(e)}>Add Friend</button>
+            <button onClick={(e) => addFriend(e)} className="buttons">Add Friend</button>
             
           </div>
 
           {/* chat body */}
           <div style={{ width: "95vw", height: "500px" }}>
             {/* chat will go here... */}
-            <CometChatUserList friendsOnly={true} />
+            {/* <CometChatUserList friendsOnly={true} /> */}
     
               <CometChatUI chatWithUser="Somyakk" />
               

@@ -19,6 +19,7 @@ user.setName(name);
 CometChat.createUser(user, authKey).then(
     user => {
         console.log("user created", user);
+        alert("Congrats You are Registered With Karewise");
     },error => {
         console.log("error", error);
     }
@@ -49,7 +50,7 @@ CometChat.createUser(user, authKey).then(
           onChange={(e) => setUserName(e.target.value)}
         />{" "}
         <br />
-        <button type="submit">Register</button>
+        <button type="submit" className="buttons">Register</button>
       </form>
     </div>
   );
